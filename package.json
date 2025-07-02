@@ -1,7 +1,7 @@
 {
   "name": "nuxt-app",
-  "private": true,
   "type": "module",
+  "private": true,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@nuxt/eslint": "^1.4.1",
+    "@nuxt/icon": "^1.15.0",
     "@nuxtjs/tailwindcss": "^7.0.0-beta.0",
     "@tailwindcss/vite": "^4.1.11",
     "eslint": "^9.29.0",
@@ -22,7 +23,9 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^4.16.1",
     "daisyui": "^5.0.43",
+    "eslint-plugin-format": "^1.0.1",
     "typescript": "^5.8.3"
   }
 }

@@ -1,5 +1,5 @@
 <template>
-	<footer>
-		Ale
-	</footer>
+  <footer>
+    Ale
+  </footer>
 </template>

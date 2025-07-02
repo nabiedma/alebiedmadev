@@ -1,45 +1,95 @@
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes:
+    grayfox-light --default,
+    grayfox --prefersdark;
+}
 @plugin "daisyui/theme" {
-  name: "mytheme";
-  default: true; /* set as default */
-  prefersdark: false; /* set as default dark mode (prefers-color-scheme:dark) */
-  color-scheme: light; /* color of browser-provided UI */
+  name: "grayfox";
+  default: false;
+  prefersdark: true;
+  color-scheme: "dark";
 
-  --color-base-100: oklch(98% 0.02 240);
-  --color-base-200: oklch(95% 0.03 240);
-  --color-base-300: oklch(92% 0.04 240);
-  --color-base-content: oklch(20% 0.05 240);
-  --color-primary: oklch(55% 0.3 240);
-  --color-primary-content: oklch(98% 0.01 240);
-  --color-secondary: oklch(70% 0.25 200);
-  --color-secondary-content: oklch(98% 0.01 200);
-  --color-accent: oklch(65% 0.25 160);
-  --color-accent-content: oklch(98% 0.01 160);
-  --color-neutral: oklch(50% 0.05 240);
-  --color-neutral-content: oklch(98% 0.01 240);
-  --color-info: oklch(70% 0.2 220);
-  --color-info-content: oklch(98% 0.01 220);
-  --color-success: oklch(65% 0.25 140);
-  --color-success-content: oklch(98% 0.01 140);
-  --color-warning: oklch(80% 0.25 80);
-  --color-warning-content: oklch(20% 0.05 80);
-  --color-error: oklch(65% 0.3 30);
-  --color-error-content: oklch(98% 0.01 30);
+  --color-base-100: oklch(20% 0.005 280); /* Gunmetal gray */
+  --color-base-200: oklch(28% 0.007 280); /* Shadow gray */
+  --color-base-300: oklch(36% 0.01 280); /* Lighter armor panel */
+  --color-base-content: oklch(95% 0.005 280); /* Light text for dark background */
 
-  /* border radius */
-  --radius-selector: 1rem;
-  --radius-field: 0.25rem;
-  --radius-box: 0.5rem;
+  --color-primary: oklch(85% 0.25 27); /* Visor red-orange */
+  --color-primary-content: oklch(20% 0.02 27); /* Dark content over bright accent */
 
-  /* base sizes */
+  --color-secondary: oklch(50% 0.05 280); /* Titanium gray */
+  --color-secondary-content: oklch(95% 0.005 280);
+
+  --color-accent: oklch(90% 0.18 27); /* Enhanced visor glow for hover/focus */
+  --color-accent-content: oklch(20% 0.02 27);
+
+  --color-neutral: oklch(38% 0.015 280); /* Mid-tone for UI borders or cards */
+  --color-neutral-content: oklch(98% 0 0);
+
+  --color-info: oklch(70% 0.14 245); /* Cyan-hued UI highlight */
+  --color-info-content: oklch(20% 0.01 245);
+
+  --color-success: oklch(62% 0.18 145); /* Tactical HUD green */
+  --color-success-content: oklch(12% 0.015 145);
+
+  --color-warning: oklch(72% 0.2 80); /* Warning amber */
+  --color-warning-content: oklch(15% 0.02 80);
+
+  --color-error: oklch(58% 0.23 25); /* Desaturated red */
+  --color-error-content: oklch(95% 0.01 25);
+
+  /* Rounded corners & UI sizing for a clean, futuristic style */
+  --radius-selector: 0.25rem;
+  --radius-field: 2rem;
+  --radius-box: 1rem;
   --size-selector: 0.25rem;
   --size-field: 0.25rem;
-
-  /* border size */
-  --border: 1px;
-
-  /* effects */
+  --border: 2px;
   --depth: 1;
-  --noise: 0;
+  --noise: 0.5;
+}
+@plugin "daisyui/theme" {
+  name: "grayfox-light";
+  default: true;
+  prefersdark: false;
+  color-scheme: "light";
+
+  --color-base-100: oklch(94% 0.005 280); /* White armor */
+  --color-base-200: oklch(88% 0.007 280); /* Light panel shadows */
+  --color-base-300: oklch(80% 0.01 280); /* UI element bg */
+  --color-base-content: oklch(20% 0.005 280); /* Dark text for light bg */
+
+  --color-primary: oklch(60% 0.22 27); /* Visor red, softened for light UI */
+  --color-primary-content: oklch(98% 0.01 27);
+
+  --color-secondary: oklch(72% 0.05 280); /* Brushed metal */
+  --color-secondary-content: oklch(15% 0.01 280);
+
+  --color-accent: oklch(68% 0.18 27); /* Hover/focus accent */
+  --color-accent-content: oklch(98% 0.01 27);
+
+  --color-neutral: oklch(55% 0.015 280); /* Light mode neutral base */
+  --color-neutral-content: oklch(10% 0.01 280);
+
+  --color-info: oklch(65% 0.14 245); /* HUD cyan */
+  --color-info-content: oklch(10% 0.01 245);
+
+  --color-success: oklch(70% 0.18 145); /* Tactical green */
+  --color-success-content: oklch(12% 0.015 145);
+
+  --color-warning: oklch(75% 0.2 80); /* Amber warning */
+  --color-warning-content: oklch(20% 0.01 80);
+
+  --color-error: oklch(60% 0.23 25); /* Deep red */
+  --color-error-content: oklch(98% 0.01 25);
+
+  --radius-selector: 0.25rem;
+  --radius-field: 2rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 2px;
+  --depth: 1;
+  --noise: 0.15;
 }
