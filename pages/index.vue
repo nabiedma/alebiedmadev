@@ -1,3 +1,7 @@
 <template>
-  <AppHero />
+  <div>
+    <HomeHero />
+    <HomeBlog />
+    <HomeContact />
+  </div>
 </template>
