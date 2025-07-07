@@ -1,7 +1,12 @@
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
-  modules: ["@nuxt/eslint", "@nuxtjs/tailwindcss", "@nuxt/icon"],
+  modules: [
+    "@nuxt/eslint",
+    "@nuxtjs/tailwindcss",
+    "@nuxt/icon",
+    "@nuxtjs/google-fonts",
+  ],
   devtools: { enabled: true },
   css: ["~/assets/css/app.css"],
   compatibilityDate: "2025-05-15",
@@ -12,5 +17,14 @@ export default defineNuxtConfig({
     config: {
       standalone: false,
     },
+  },
+  googleFonts: {
+    families: {
+      "Nunito+Sans": true,
+    },
+    display: "swap",
+    preload: true,
+    preconnect: true,
+    prefetch: true,
   },
 });
