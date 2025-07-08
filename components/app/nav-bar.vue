@@ -11,6 +11,7 @@
       <ul class="menu menu-horizontal px-1 mr-2">
         <li><a class="font-bold">Home</a></li>
         <li><a>Blog</a></li>
+        <li><a>Contact</a></li>
       </ul>
       <AppThemeToggle />
     </div>
