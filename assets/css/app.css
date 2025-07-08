@@ -58,7 +58,7 @@
   --color-base-100: oklch(94% 0.005 280); /* White armor */
   --color-base-200: oklch(88% 0.007 280); /* Light panel shadows */
   --color-base-300: oklch(80% 0.01 280); /* UI element bg */
-  --color-base-content: oklch(20% 0.005 280); /* Dark text for light bg */
+  --color-base-content: oklch(0.5555 0 0); /* Grey text for light bg */
 
   --color-primary: oklch(60% 0.22 27); /* Visor red, softened for light UI */
   --color-primary-content: oklch(98% 0.01 27);
