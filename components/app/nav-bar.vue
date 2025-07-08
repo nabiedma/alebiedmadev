@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="fixed top-0 right-0 left-0 navbar px-8 bg-base-100 shadow-sm">
+  <div class="fixed top-0 right-0 left-0 navbar px-8 bg-base-100 shadow-sm shadow-base-200">
     <div class="flex-1">
       <a class="text-xl text-primary font-bold">AleBiedma.dev</a>
     </div>
