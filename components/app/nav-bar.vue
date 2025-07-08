@@ -8,10 +8,11 @@
       <a class="text-xl text-primary font-bold">AleBiedma.dev</a>
     </div>
     <div class="flex-none">
-      <ul class="menu menu-horizontal px-1">
+      <ul class="menu menu-horizontal px-1 mr-2">
         <li><a class="font-bold">Home</a></li>
         <li><a>Blog</a></li>
       </ul>
+      <AppThemeToggle />
     </div>
   </div>
 </template>

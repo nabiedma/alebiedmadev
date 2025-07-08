@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxt/icon",
     "@nuxtjs/google-fonts",
+    "@nuxtjs/color-mode",
   ],
   devtools: { enabled: true },
   css: ["~/assets/css/app.css"],
@@ -26,5 +27,11 @@ export default defineNuxtConfig({
     preload: true,
     preconnect: true,
     prefetch: true,
+  },
+  colorMode: {
+    dataValue: "theme",
+    preference: "system",
+    fallback: "light",
+    storage: "localStorage",
   },
 });
